@@ -10,20 +10,28 @@
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
     ></script>
+
+    <link rel="stylesheet" href="estilo.css">
+
   </head>
   <body>
 
     <!-- Use it like any other HTML element -->
-    <model-viewer
-      alt="Prueba de AR"
-      src="./recursos/modelo.glb"
-      ar
-      environment-image="./recursos/entorno.hdr"
-      poster="./recursos/portada.webp"
-      shadow-intensity="1"
-      camera-controls
-      touch-action="pan-y"
-    ></model-viewer>
+    <div class="contenedor">
+      <model-viewer
+        alt="Prueba de AR"
+        src="./recursos/modelo.glb"
+        ar
+        environment-image="./recursos/entorno.hdr"
+        poster="./recursos/portada.webp"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+      ></model-viewer>
+
+        <p>Toca el ícono del cubo para ver el elemento en realidad aumentada</p>
+
+    </div>
 
   </body>
 </html>
